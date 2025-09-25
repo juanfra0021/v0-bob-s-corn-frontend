@@ -3,8 +3,9 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
-import { Suspense } from "react"
+import { ClientWrapper } from "@/components/client-wrapper"
 import "./globals.css"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Bob's Corn Farm - Maíz Fresco de la Granja",
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={null}>{children}</Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ClientWrapper>{children}</ClientWrapper>
+        </Suspense>
         <Analytics />
       </body>
     </html>
