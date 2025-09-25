@@ -23,7 +23,7 @@ import { useCornPurchase } from "@/hooks/use-corn-purchase"
 
 type Screen = "home" | "purchase" | "inventory" | "history"
 
-export default function Page() {
+export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>("home")
   const [windowDimensions, setWindowDimensions] = useState({ width: 1200, height: 800 })
   const [isClient, setIsClient] = useState(false)
