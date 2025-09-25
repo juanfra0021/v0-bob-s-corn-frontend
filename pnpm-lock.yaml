@@ -96,7 +96,7 @@ importers:
         specifier: latest
         version: 1.2.8(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@vercel/analytics':
-        specifier: latest
+        specifier: 1.5.0
         version: 1.5.0(next@15.2.4(@babel/core@7.28.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.93.2))(react@19.0.0)
       class-variance-authority:
         specifier: ^0.7.1
@@ -117,7 +117,7 @@ importers:
         specifier: latest
         version: 12.23.22(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       geist:
-        specifier: latest
+        specifier: 1.5.1
         version: 1.5.1(next@15.2.4(@babel/core@7.28.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.93.2))
       input-otp:
         specifier: latest
